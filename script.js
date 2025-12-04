@@ -46,6 +46,10 @@ const PHOTOS = [
      src: "img/4.jpg",
      caption: "Las nubes en la noche todas hermosas pero ninguna como tú 🌥️",
    },
+   {
+     src: "img/5.jpeg",
+     caption: "Prueba del servidor jsjs",
+   },
 ];
 
 
