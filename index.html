@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nuestro Álbum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <button id="backBtn" class="back-btn">
+        ← Volver
+      </button>
+      <div>
+        <div class="title">Álbum Gonzalez</div>
+        <div class="subtitle">Hecho solo para ti bonita 💙</div>
+      </div>
+    </header>
+
+    <main>
+      <!-- PANTALLA DE BIENVENIDA -->
+      <section id="welcomeScreen" class="screen active">
+        <div class="welcome-layout">
+          <div class="welcome-text">
+            <p>
+              Este sera tu espacio para guardar las
+              <span class="neon-highlight">cartas</span>,
+              <span class="neon-highlight">fotos</span> y
+              <span class="neon-highlight">frases</span> que te haran recordar lo
+              especial, lo importante que eres para mi y lo muchoooo que te quiero.
+            </p>
+          </div>
+
+          <div class="envelope-wrapper">
+            <div id="envelope" class="envelope">
+              <div class="envelope-flap"></div>
+              <div class="envelope-heart">
+                <span>💌</span>
+              </div>
+              <div class="envelope-label">
+                Toca para abrir <strong>Tu Album 😍</strong>
+              </div>
+            </div>
+
+            <div id="letterPanels" class="letter-panels">
+              <div class="panel panel-left" data-target="lettersScreen">
+                <div class="panel-icon">📜</div>
+                <h3>Cartas</h3>
+                <span>Mini álbum con tus cartas</span>
+              </div>
+
+              <div class="panel panel-center" data-target="phrasesScreen">
+                <div class="panel-icon">✨</div>
+                <h3>Frases</h3>
+                <span>Frases bonitas para la niña mas bonita del mundo</span>
+              </div>
+
+              <div class="panel panel-right" data-target="photosScreen">
+                <div class="panel-icon">📷</div>
+                <h3>Fotos</h3>
+                <span>Todo lo que me recuerda lo bonita que eres</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARTAS -->
+      <section id="lettersScreen" class="screen">
+        <center>
+          <h3 class="section-heading">Mini álbum de cartas</h3>
+          <p class="section-description">
+            Aquí están tus cartas especiales. Cada sobre es una carta, y al abrirlo verás el mensaje completo. <br>
+            Disfruta leyendo cada una de ellas cuando quieras recordar lo mucho que te quiero.
+          </p>
+          <br />
+        </center>
+        <div id="lettersAlbum" class="letters-album">
+          <!-- Sobres generados por JS -->
+        </div>
+      </section>
+
+      <!-- FRASES (solo lectura, se llenan por script.js) -->
+      <section id="phrasesScreen" class="screen">
+        <center>
+          <h3 class="section-heading">Frases para ti</h3>
+          <p class="section-description">
+            Aquí verás pequeñas frases y pensamientos que quiero dedicarte. <br>
+            Todo lo que sale de aquí viene directo desde mi corazón hacia ti.
+          </p>
+          <br />
+        </center>
+        <div class="list" id="phrasesList"></div>
+      </section>
+
+      <!-- FOTOS (solo galería, se llena por script.js) -->
+      <section id="photosScreen" class="screen">
+        <center>
+          <h3 class="section-heading">Galería de fotos</h3>
+          <p class="section-description">
+            Aquí estarán las fotos y momentos que me recuerdan lo bonita que eres y lo mucho que significas para mí. <br>
+            Toca una foto para verla en pantalla completa y hacerle zoom.
+          </p>
+          <br />
+        </center>
+
+        <div class="photo-grid" id="photoGrid"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- LIGHTBOX / MODAL DE FOTO -->
+  <div id="photoLightbox" class="lightbox hidden">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button id="lightboxClose" class="icon-btn lightbox-close">✕</button>
+
+      <div class="lightbox-toolbar">
+        <button id="zoomOutBtn" class="icon-btn">−</button>
+        <span id="zoomLabel" class="zoom-label">100%</span>
+        <button id="zoomInBtn" class="icon-btn">+</button>
+      </div>
+
+      <div class="lightbox-image-wrapper">
+        <img id="lightboxImg" src="" alt="Foto" />
+      </div>
+
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
