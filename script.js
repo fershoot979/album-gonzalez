@@ -12,6 +12,17 @@ const LETTERS = [
       "Te quieroooooo muchisimoooooooooo bonita!!!",
     date: "Nota 02 de 100",
   },
+
+  {
+    title: "Carta 03 de 100",
+    text:
+      "Holaaaa bffi bonita, esta es la tercera carta de 100, solo quiero decirte que lo siento de corazón te lo digo, yo te quiero muchísimo, eres mi mejor amiga, eres una de las pocas personas importantes que me quedan en la vida, no quiero perderte.\n\n" +
+      "Entiendo claramente que tú solo me quieres como un hermano y como tu mejor amigo, discúlpame por subir fotos a mis estados diciendo lo bonita que eres y tirándote indirectas, te prometo que esta será la última vez que te diré lo que siento por ti.\n\n" +
+      "Después de esto, te voy a querer como mejor amigo, y no solo eso: voy a ser el mejooooooooooooooooooooooooooooooooooooooooooooor amigo del mundo que puedas tener.\n\n" +
+      "No olvides lo mucho que te quiero, puedo perder a quien sea en mi vida; pero no soportaría perderte a ti.",
+    date: "Nota 03 de 100",
+  },  
+  
   // Si quieres agregar más cartas, copia esto:
   // {
   //   title: "Carta 2 de 100",
